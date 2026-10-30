@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カケメモ - シンプル家計簿</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2a24;
+    --muted: #5d6b63;
+    --accent: #2e805c;
+    --line: #e3e8e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121614;
+      --text: #e6ece8;
+      --muted: #9aa8a0;
+      --accent: #6bc299;
+      --line: #2a332e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.5rem; line-height: 1.4; margin: 0 0 4px; }
+  .app { color: var(--muted); margin: 0 0 24px; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 8px;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent);
+  }
+  p, li { margin: 0 0 8px; }
+  ul { padding-left: 1.4em; margin: 0 0 8px; }
+  a { color: var(--accent); word-break: break-all; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+
+  .lead { font-size: 1.05rem; }
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 0 0 12px; }
+  .card h3 { margin: 0 0 4px; font-size: 1rem; }
+  .card p { margin: 0; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 24px 0 0; }
+  .badge { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .note { color: var(--muted); font-size: 0.9rem; }
+  dt { font-weight: 600; margin-top: 16px; }
+  dd { margin: 4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>カケメモ - シンプル家計簿</h1>
+  <p class="app">KJ Studio Labs</p>
+
+  <p class="lead">入力は日付・タグ・金額の3つだけ。タグ別グラフと月別グラフ、前月比で、支出の増減がひと目でわかるiPhone向けの家計簿アプリです。</p>
+
+  <h2>主な機能</h2>
+  <div class="card">
+    <h3>かんたん入力</h3>
+    <p>日付・タグ・金額を入れるだけ。毎日続けやすいシンプルな記録画面です。</p>
+  </div>
+  <div class="card">
+    <h3>タグ別の支出グラフ</h3>
+    <p>その月の支出合計と、タグごとの金額を横棒グラフでひと目で確認できます。</p>
+  </div>
+  <div class="card">
+    <h3>月別の推移と前月比</h3>
+    <p>直近6か月・12か月の推移、前月との差額と前月比を、全体でもタグごとでも確認できます。</p>
+  </div>
+  <div class="card">
+    <h3>CSVの取り込み・書き出し</h3>
+    <p>ほかの家計簿アプリで書き出したCSVから過去の支出を取り込めます。記録のCSV書き出しにも対応しています。</p>
+  </div>
+  <div class="card">
+    <h3>登録不要・データは端末の中だけ</h3>
+    <p>アカウント登録は不要です。記録は端末の中にだけ保存され、外部に送信されません。</p>
+  </div>
+
+  <h2>動作環境</h2>
+  <p>iOS 17.0以降のiPhone</p>
+  <p class="note">アプリ内に広告が表示されます。アプリ内課金(買い切り)で広告を非表示にできます。</p>
+
+  <h2>サポート</h2>
+  <div class="nav">
+    <a href="support.html">サポート・よくある質問</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="mailto:kjstudiolabs@gmail.com">お問い合わせ</a>
+  </div>
+
+  <footer>
+    &copy; 2026 KJ Studio Labs
+  </footer>
+</main>
+</body>
+</html>

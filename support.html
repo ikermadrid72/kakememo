@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート｜カケメモ - シンプル家計簿</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2a24;
+    --muted: #5d6b63;
+    --accent: #2e805c;
+    --line: #e3e8e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121614;
+      --text: #e6ece8;
+      --muted: #9aa8a0;
+      --accent: #6bc299;
+      --line: #2a332e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.5rem; line-height: 1.4; margin: 0 0 4px; }
+  .app { color: var(--muted); margin: 0 0 24px; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 8px;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent);
+  }
+  p, li { margin: 0 0 8px; }
+  ul { padding-left: 1.4em; margin: 0 0 8px; }
+  a { color: var(--accent); word-break: break-all; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+
+  .lead { font-size: 1.05rem; }
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 0 0 12px; }
+  .card h3 { margin: 0 0 4px; font-size: 1rem; }
+  .card p { margin: 0; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 24px 0 0; }
+  .badge { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .note { color: var(--muted); font-size: 0.9rem; }
+  dt { font-weight: 600; margin-top: 16px; }
+  dd { margin: 4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>サポート</h1>
+  <p class="app">カケメモ - シンプル家計簿</p>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告やご質問は、以下のメールアドレスまでお送りください。アプリの「設定」→「お問い合わせ」からも送信できます。</p>
+  <p><a href="mailto:kjstudiolabs@gmail.com">kjstudiolabs@gmail.com</a></p>
+  <p class="note">返信までお時間をいただく場合があります。不具合のご報告の際は、お使いのiPhoneの機種、iOSのバージョン、アプリのバージョン(「設定」画面の下部に表示)を添えていただけると助かります。</p>
+
+  <h2>よくある質問</h2>
+  <dl>
+    <dt>アプリを削除すると、記録はどうなりますか？</dt>
+    <dd>記録は端末の中にだけ保存されているため、アプリを削除すると記録も消えます。削除する前に「設定」→「CSVで書き出す」で記録を保存しておいてください。</dd>
+
+    <dt>機種変更のとき、記録を引き継げますか？</dt>
+    <dd>iPhone本体のバックアップ(iCloudバックアップやクイックスタート)で引き継げます。念のため、旧端末で「設定」→「CSVで書き出す」を行い、新端末で「設定」→「CSVからデータを取り込む」でも復元できます。CSVで復元できるのは支出の記録(日付・タグ名・金額)です。タグの色や並び順は設定し直してください。</dd>
+
+    <dt>ほかの家計簿アプリのデータを取り込めますか？</dt>
+    <dd>1行目の見出しが「日付,種別,カテゴリ,金額,メモ,タグ」の形式のCSVを取り込めます。種別が「支出」の行だけが対象です。取り込む前に、件数・合計金額・新しく作られるタグを確認できます。</dd>
+
+    <dt>CSVを取り込もうとするとエラーが表示されます。</dt>
+    <dd>エラーの行番号と理由が表示されます。日付が「2026-07-02」の形式になっているか、金額が数字だけになっているか、カテゴリが空欄になっていないかをご確認ください。取り込めない行が1行でもある場合は、記録を守るため取り込みを行いません。元のアプリで該当の記録を修正し、もう一度書き出してからお試しください。</dd>
+
+    <dt>同じCSVを2回取り込んでしまいました。</dt>
+    <dd>同じファイルの取り込み済みの行は自動でスキップされるため、二重に登録されることはありません。期間が重なる別のファイルの場合は、重複の可能性がある行を事前にお知らせします。</dd>
+
+    <dt>広告を削除したい／機種変更後に広告が表示されます。</dt>
+    <dd>「設定」→「広告を削除」から、買い切りで広告を非表示にできます。機種変更やアプリの再インストール後は、「設定」→「購入を復元」を押してください。購入時と同じApple Accountでサインインしている必要があります。</dd>
+  </dl>
+
+  <h2>関連ページ</h2>
+  <div class="nav">
+    <a href="./">カケメモについて</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </div>
+
+  <footer>
+    &copy; 2026 KJ Studio Labs
+  </footer>
+</main>
+</body>
+</html>
